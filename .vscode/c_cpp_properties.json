@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/jiyeong/catkin_ws/devel/include",
+                "/opt/ros/kinetic/include",
+                "/home/jiyeong/catkin_ws/src/add_object_stl/include",
+                "/home/jiyeong/catkin_ws/src/hqp_task_transition/include",
+                "/home/jiyeong/catkin_ws/src/moveit_vrep_interface/include",
+                "/home/jiyeong/catkin_ws/src/pick_and_place/include",
+                "/home/jiyeong/catkin_ws/src/stomp_ros/stomp_core/include",
+                "/home/jiyeong/catkin_ws/src/stomp_ros/stomp_moveit/include",
+                "/home/jiyeong/catkin_ws/src/stomp_ros/stomp_plugins/include",
+                "/home/jiyeong/catkin_ws/src/vrep_franka_tutorial/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
