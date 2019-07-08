@@ -16,11 +16,17 @@ find_package(catkin REQUIRED COMPONENTS
   tf2_ros
   tf2_eigen
   tf2_geometry_msgs
+<<<<<<< HEAD
   stomp_core
 )
 
 catkin_package(
 )
+=======
+)
+
+catkin_package()
+>>>>>>> 0e5020a4f1c82d78d18c07d4c27f05eb1828d791
 
 
 add_definitions(-DDOF=7)
@@ -33,6 +39,11 @@ find_package(Threads REQUIRED)
 find_package(Boost REQUIRED system filesystem date_time thread)
 find_package(Eigen3 REQUIRED)
 
+<<<<<<< HEAD
+=======
+catkin_package(
+)
+>>>>>>> 0e5020a4f1c82d78d18c07d4c27f05eb1828d791
 
 include_directories(include
 ${catkin_INCLUDE_DIRS}

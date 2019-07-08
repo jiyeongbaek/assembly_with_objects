@@ -1,5 +1,8 @@
 #!/usr/bin/env python
+<<<<<<< HEAD
 # -*- coding: utf-8 -*-
+=======
+>>>>>>> 0e5020a4f1c82d78d18c07d4c27f05eb1828d791
 
 from __future__ import print_function
 
@@ -13,13 +16,19 @@ import actionlib
 import std_msgs.msg
 import geometry_msgs.msg
 import moveit_msgs.msg
+<<<<<<< HEAD
 
 import franka_gripper.msg
+=======
+import franka_gripper.msg
+
+>>>>>>> 0e5020a4f1c82d78d18c07d4c27f05eb1828d791
 import franka_control.srv
 
 from math import pi
 from moveit_commander.conversions import pose_to_list
 
+<<<<<<< HEAD
 
 try:
     from pyassimp import pyassimp
@@ -31,6 +40,8 @@ except:
         pyassimp = False
         print("Failed to import pyassimp, see https://github.com/ros-planning/moveit/issues/86 for more info")
 
+=======
+>>>>>>> 0e5020a4f1c82d78d18c07d4c27f05eb1828d791
 GRIPPER_OPEN = [0.04, 0.4]
 GRIPPER_CLOSED = [0.03, 0.3]
 
@@ -39,8 +50,13 @@ class MoveGroupPlanner():
 
         ### MoveIt! 
         moveit_commander.roscpp_initialize(sys.argv)
+<<<<<<< HEAD
         rospy.init_node('move_group_planner',
                         anonymous=True)
+=======
+        #rospy.init_node('move_group_planner',
+        #                anonymous=True)
+>>>>>>> 0e5020a4f1c82d78d18c07d4c27f05eb1828d791
 
         self.robot = moveit_commander.RobotCommander()
         self.scene = moveit_commander.PlanningSceneInterface()
@@ -54,7 +70,9 @@ class MoveGroupPlanner():
         self.display_trajectory_publisher = rospy.Publisher('/move_group/display_planned_path',
                                                     moveit_msgs.msg.DisplayTrajectory,
                                                     queue_size=20)
-        
+
+        # We can get the name of the reference frame for this robot:
+       
         # We can also print the name of the end-effector link for this group:
         self.left_eef_link = self.left_group.get_end_effector_link()
         self.right_eef_link = self.right_group.get_end_effector_link()
